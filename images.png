@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Limbus';
+  src: url('assets/tagmarker-webfont.woff2') format('woff2'),
+       url('assets/tagmarker-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+#carlos{
+  display: flex;
+}
+#left{
+  background-image: url(./assets/abroba.webp);
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#right{
+  background: #222;
+  width: 50%;
+  height: 100vh;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-family: Limbus, sans-serif;
+  
+  
+  color: #9b9b1b
+}
+.content{
+  margin-top: 50px;
+  align-items: center;
+}
+h2{
+  /* letter-spacing: 5px; */
+  font-weight: normal;
+}
+#logo{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+form{
+  margin-top:25px;
+  margin-bottom: 25px;
+}
+form fieldset{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top:15px;
+}
+form fieldset input{
+  max-width: 500px;
+  margin-top:10px;
+  border:none;
+  border-radius: 5px;
+  height: 20px;
+  padding:0 5px;
+}
+form button{
+  background-color: #009;
+  color:#FFF;
+  border: none;
+  padding:10px 20px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top:20px
+}
+#right a{
+  color:#f6f6f6;
+  text-align: center;
+}
+.text-center{
+  text-align: center;
+}
+
+@media (max-width: 767px){
+  
+  #left{
+    display: none;
+  }
+  #right{
+    width: 100%;
+    font-size: 5vh;
+  }
+  form button{
+    font-size: xx-large;
+    width: 250px;
+    height: 75px;
+    margin-left: 50px;
+  }
+  form fieldset input{
+    height: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  #right{
+    font-size: 5vh;
+  }
+  form button{
+    font-size: xx-large;
+    width: 250px;
+    height: 75px;
+  }
+  form fieldset input{
+    height: 35px;
+  }
+}
+@media (min-width: 1025px){
+  #right{
+    font-size: 5vh;
+    justify-content: center;
+  }
+  form button{
+    font-size: xx-large;
+    width: 500px;
+    height: 100px;
+  }
+  form fieldset input{
+    height: 50px;
+  }
+}

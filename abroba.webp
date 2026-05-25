@@ -1,0 +1,35 @@
+import { useState } from 'react'
+import Logo1 from './assets/batata.webp'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div id='carlos'>
+        <div id="left"></div>
+        <div id="right">
+          <div className="content">
+            <div id="logo"><img src={Logo1} alt="" /></div>
+            <h2>Fazer Login</h2>
+            <form action="">
+              <fieldset>
+                <label>Login</label>
+                <input type="email" name="" id="" />
+              </fieldset>
+              <fieldset>
+                <label htmlFor="">Senha</label>
+                <input type="password" name="" id="" />
+              </fieldset>
+              <button>Entrar</button>
+            </form>
+            <p className='text-center'><a href="#">esqueci senha</a></p>
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
+}
+export default App
